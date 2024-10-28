@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8" />
 		<title>
+		Farewell quest!
 		</title>
 		<style>
 			body { font-family: monospace; font-size:8pt; background-color:#000000; color: #03A062; font-weight: bold;}
@@ -56,6 +57,7 @@
           		width: 100%;
 		        height: 100vh; /* Full height */
             		border-collapse: collapse; /* Remove spacing between cells */
+		
         		}
         		td {
             		text-align: center; /* Center horizontally */
@@ -309,7 +311,7 @@ IF YOU STRUGGLE, ALPARI IS ALWAYS THE ANSWER.
     });
 
     submitButton.addEventListener('click', () => {
-        const inputText = textInput.value.trim();
+        const inputText = textInput.value.trim().toLowerCase();
         if (inputText === correctText) { // Check against 'razuvaev'
             window.location.href = redirectURL1; // Redirect to 'https://ya.ru'
         } else if (inputText === decodeBase64(obfuscatedAnswer)) { // Check against 'alpari'
@@ -324,6 +326,7 @@ IF YOU STRUGGLE, ALPARI IS ALWAYS THE ANSWER.
         popup.style.display = 'none';
     });
 </script>
+
 </body>
 </html>
 
