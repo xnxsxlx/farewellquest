@@ -297,17 +297,17 @@ IF YOU STRUGGLE, ALPARI IS ALWAYS THE ANSWER.
     const textInput = document.getElementById('textInput');
 
     const obfuscatedAnswer = 'YWxwYXJp'; 
-    const obfuscatedURL1 = 'cmF6dXZhZXY=';
-    const obfuscatedURL2 = 'aHR0cHM6Ly94bnhzeGx4LmdpdGh1Yi5pby9mYXJld2VsbHF1ZXN0L2NvbmdyYXRzLmh0bWw='; 
-    const obfuscatedYTURL = 'aHR0cHM6Ly95b3V0dS5iZS8ycUJsRTItV0w2MCZmZWF0dXJlPXNoYXJlZCZhdXRvbmxheT0x'; 
+    const obfuscated1 = 'cmF6dXZhZXY=';
+    const obfuscated2 = 'aHR0cHM6Ly94bnhzeGx4LmdpdGh1Yi5pby9mYXJld2VsbHF1ZXN0L2NvbmdyYXRzLmh0bWw='; 
+    const obfuscatedYT = 'aHR0cHM6Ly95b3V0dS5iZS8ycUJsRTItV0w2MCZmZWF0dXJlPXNoYXJlZCZhdXRvbmxheT0x'; 
 
     function decodeBase64(encoded) {
         return atob(encoded);
     }
 
-    const correctText = decodeBase64(obfuscatedURL1); 
-    const redirectURL1 = decodeBase64(obfuscatedURL2); 
-    const ytRedirectURL = decodeBase64(obfuscatedYTURL);
+    const correctText = decodeBase64(obfuscated1); 
+    const vzhukh1 = decodeBase64(obfuscatedXYZ2); 
+    const ytvzhukhXYZ = decodeBase64(obfuscatedYTXYZ);
 
     showPopupLink.addEventListener('click', (event) => {
         event.preventDefault();
@@ -323,9 +323,9 @@ IF YOU STRUGGLE, ALPARI IS ALWAYS THE ANSWER.
     submitButton.addEventListener('click', () => {
         const inputText = textInput.value.trim().toLowerCase();
         if (inputText === correctText) { 
-            window.location.href = redirectURL1; 
+            window.location.href = vzhukhXYZ1; 
         } else if (inputText === decodeBase64(obfuscatedAnswer)) { 
-            window.location.href = ytRedirectURL; 
+            window.location.href = ytvzhukhXYZ; 
         } else {
             alert('Not even close!');
         }
