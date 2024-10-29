@@ -64,10 +64,10 @@
             		vertical-align: middle; 
         		}
 			.char {
-  	          	visibility: hidden; /* Hide each character initially */
+  	          	visibility: hidden; 
         		}
 		       .color-changing {
-	              	transition: color 0.5s; /* Smooth color transition */
+	              	transition: color 0.5s; 
         		}
 
 		</style>
@@ -137,7 +137,7 @@ IF YOU STRUGGLE, ALPARI IS ALWAYS THE ANSWER.
 				&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%&&&%###%%%%&&&%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%%%%%%%
 			</p>
 			<p>
-				&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%#(/(/(/*,.,*(#%#(/***/(////**(%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%%%%%%%%
+				&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%#(/(/(/*,.,*(#%#(/***/(//**(%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%%%%%%%%%
 			</p>
 			<p>
 				&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&#/*.,///*,..,/*,/*,.,,,,.*,,,,(/****,**%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&%&%%%%%%%
@@ -344,14 +344,12 @@ IF YOU STRUGGLE, ALPARI IS ALWAYS THE ANSWER.
                 const text = line.innerText;
                 line.innerText = ""; // Clear the original text
 
-                // Wrap each character in a span
                 text.split("").forEach((char, i) => {
                     const span = document.createElement("span");
                     span.classList.add("char");
                     span.textContent = char;
                     line.appendChild(span);
 
-                    // Set delay for each character
                     setTimeout(() => {
                         span.style.visibility = "visible";
                     }, totalDelay + (i * 5));                 });
@@ -362,10 +360,9 @@ IF YOU STRUGGLE, ALPARI IS ALWAYS THE ANSWER.
         let isGreen = true;
 
         setInterval(() => {
-            // Toggle color
             colorChangingSymbol.style.color = isGreen ? 'red' : 'green';
             isGreen = !isGreen; // Switch the color for the next interval
-        }, 500); // Change speed (500ms = 0.5 seconds)
+        }, 500); 
 
 </script>
 
